@@ -139,6 +139,15 @@ packages:
     description: flutter
     source: sdk
     version: "0.0.0"
+  flutter_2d_amap:
+    dependency: "direct main"
+    description:
+      path: "."
+      ref: "323fcf8"
+      resolved-ref: "323fcf8203d89a4235f923a1b53ae1e455c9afb3"
+      url: "https://github.com/simplezhli/flutter_2d_amap.git"
+    source: git
+    version: "0.1.0"
   flutter_cache_manager:
     dependency: transitive
     description:
@@ -146,13 +155,20 @@ packages:
       url: "https://pub.flutter-io.cn"
     source: hosted
     version: "1.4.1"
+  flutter_cupertino_date_picker:
+    dependency: "direct main"
+    description:
+      name: flutter_cupertino_date_picker
+      url: "https://pub.flutter-io.cn"
+    source: hosted
+    version: "1.0.26+2"
   flutter_localizations:
     dependency: "direct main"
     description: flutter
     source: sdk
     version: "0.0.0"
   flutter_page_indicator:
-    dependency: transitive
+    dependency: "direct main"
     description:
       name: flutter_page_indicator
       url: "https://pub.flutter-io.cn"
@@ -189,6 +205,13 @@ packages:
       url: "https://pub.flutter-io.cn"
     source: hosted
     version: "3.1.4"
+  infinite_cards:
+    dependency: "direct main"
+    description:
+      name: infinite_cards
+      url: "https://pub.flutter-io.cn"
+    source: hosted
+    version: "1.0.3"
   intl:
     dependency: transitive
     description:
@@ -196,6 +219,13 @@ packages:
       url: "https://pub.flutter-io.cn"
     source: hosted
     version: "0.16.1"
+  js:
+    dependency: transitive
+    description:
+      name: js
+      url: "https://pub.flutter-io.cn"
+    source: hosted
+    version: "0.6.2"
   matcher:
     dependency: transitive
     description:
@@ -258,7 +288,7 @@ packages:
       name: path_provider_platform_interface
       url: "https://pub.flutter-io.cn"
     source: hosted
-    version: "1.0.2"
+    version: "1.0.3"
   pedantic:
     dependency: transitive
     description:
@@ -488,6 +518,13 @@ packages:
       url: "https://pub.flutter-io.cn"
     source: hosted
     version: "2.0.8"
+  webview_flutter:
+    dependency: "direct main"
+    description:
+      name: webview_flutter
+      url: "https://pub.flutter-io.cn"
+    source: hosted
+    version: "0.3.22+1"
   xdg_directories:
     dependency: transitive
     description:

@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_shopping/provider/theme_provider.dart';
+import 'package:flutter_shopping/routers/not_found_page.dart';
 import 'package:flutter_shopping/routers/routers.dart';
 import 'package:flutter_shopping/ui/splash/page/splash_page.dart';
 import 'package:flutter_shopping/util/device_utils.dart';
@@ -33,7 +34,7 @@ class MyApp extends StatelessWidget {
   final Widget home;
   final ThemeData theme;
 
-  MyApp({this.home, this.theme}) {
+ MyApp({this.home, this.theme}) {
     Log.init();
     initDio();
     Routes.initRoutes();
@@ -96,6 +97,11 @@ class MyApp extends StatelessWidget {
                 return MediaQuery(
                   data: MediaQuery.of(context).copyWith(textScaleFactor: 1.0), // 或者 MediaQueryData.fromWindow(WidgetsBinding.instance.window).copyWith(textScaleFactor: 1.0),
                   child: child,
+                );
+              },
+              onUnknownRoute: (_) {
+                return MaterialPageRoute(
+                  builder: (BuildContext context) => NotFoundPage(),
                 );
               },
             );
